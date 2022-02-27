@@ -8,4 +8,7 @@ The server provides a service that translates lowercase letters in the text
 sent to the client in capital letters and sent back to the client.
 The client displays the received data on the screen.
 
-Windows/Linux
+No socket multiplexing, it is possible to operate only one  
+duplex communication without creating other new connections.
+
+Windows
