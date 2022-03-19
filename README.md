@@ -12,4 +12,4 @@ The client displays the received data on the screen.
 No socket multiplexing, it is possible to operate only one  
 duplex communication without creating other new connections.
 
-Windows
+Windows / Linux
