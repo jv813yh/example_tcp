@@ -33,3 +33,5 @@ Klient prijate data vypisuje na obrazovku.
 Ziadne multiplexovanie socketov, je mozne obsluhovat iba jednu
 obojsmernu komunikaciu bez vytvarania dalsich novych spojeni.
 
+Windows/Linux
+
