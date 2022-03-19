@@ -8,7 +8,7 @@
 
 Zoznam suborov
   
- example_tcp
+ simple_example_tcp
       |__compiling.bat
       |__tcp_client.c
       |__tcp_serve_toupper.c
