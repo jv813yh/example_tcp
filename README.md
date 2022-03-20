@@ -12,4 +12,5 @@ The client displays the received data on the screen.
 No socket multiplexing, it is possible to operate only one  
 duplex communication without creating other new connections.
 
-Windows / Linux
+Windows /Linux 
+bat file for Linux: https://www.linux.org/threads/running-windows-batch-files-on-linux.11205/
