@@ -14,4 +14,7 @@ duplex communication without creating other new connections.
 
 Windows /Linux 
 
-bat file for Linux: https://www.linux.org/threads/running-windows-batch-files-on-linux.11205/
+for linux:
+gcc tcp_client.c -Wall -Wextra -o2 -o tcp_client
+gcc tcp_serve_toupper.c -Wall -Wextra -o2 -o tcp_server
+
