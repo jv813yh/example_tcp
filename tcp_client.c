@@ -13,9 +13,11 @@
  * duplex communication without creating other new connections. *
  *                                                              *
  * Compileable on Windows with WinLibs standalone build of GCC  *
- * and MinGW-w64       
- *
- * Compileable on Linux with ....                                         *
+ * and MinGW-w64 with compiling.bat file                        *
+ *                                                              *
+ * Compileable on Linux:                                        *
+ * gcc tcp_client.c -Wall -Wextra -o2 -o tcp_client             *
+ * gcc tcp_serve_toupper.c -Wall -Wextra -o2 -o tcp_server      *
  *                                                              *
  * Author-Jozef Vendel  Creation date- 20.12.2021               *
  * ============================================================ *
