@@ -27,7 +27,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
-#include <conio.h>
 
 /* Macros for networking work Windows / Linux */
 #include "win_linux_sockets.h"
@@ -165,9 +164,13 @@ int main(int argc, char *argv[]) {
         /* Deciding whether to terminate the while() -> program */                       
         printf("\nDo you want to finish?\nPress any key, 'q' to quit\n");
 
-        finish = getch();
+        finish = getchar();
 
         if(finish == 'q') break;
+
+        /* Buffer cleaning */
+        while(getchar() != '\n')
+            ;
 
     } /* end while() {...} */
     
