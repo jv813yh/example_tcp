@@ -12,9 +12,10 @@ The client displays the received data on the screen.
 No socket multiplexing, it is possible to operate only one  
 duplex communication without creating other new connections.
 
-Windows /Linux 
+Windows with .bat files
 
-for linux:
+Linux:
+
 gcc tcp_client.c -Wall -Wextra -o2 -o tcp_client
 gcc tcp_serve_toupper.c -Wall -Wextra -o2 -o tcp_server
 
