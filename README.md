@@ -1,4 +1,4 @@
-# Simple_example_tcp
+# simple_example_tcp
 The example_tcp folder contains a simple example of a server and a client
 which They communicate together using the TCP communication channel.
 The server works in Loopback on port 8080 (The values can change, 
