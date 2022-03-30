@@ -1,4 +1,4 @@
-# example_tcp
+# Simple_example_tcp
 The example_tcp folder contains a simple example of a server and a client
 which They communicate together using the TCP communication channel.
 The server works in Loopback on port 8080 (The values can change, 
@@ -15,9 +15,9 @@ The client displays the received data on the screen.
 No socket multiplexing, it is possible to operate only one  
 duplex communication without creating other new connections.
 
-Windows with .bat files
+# Windows with .bat files
 
-Linux:
+# Linux:
 
 gcc tcp_client.c -Wall -Wextra -o2 -o tcp_client
 
