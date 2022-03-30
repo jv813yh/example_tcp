@@ -13,6 +13,7 @@ Zoznam suborov
       |__tcp_client.c
       |__tcp_serve_toupper.c
       |__tcp_server.bat
+      |__tcp_client.bat
       |__win_linux_socket.h
 
 
