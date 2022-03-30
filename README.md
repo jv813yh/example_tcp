@@ -19,7 +19,7 @@ duplex communication without creating other new connections.
 If you want cryptographically secured communication:
 https://github.com/jv813yh/simple_example_tcp_salt_channel
 
-# Windows 
+# Windows: 
 with .bat files or command line
 
 # Linux:
