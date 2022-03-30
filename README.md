@@ -23,3 +23,5 @@ gcc tcp_client.c -Wall -Wextra -o2 -o tcp_client
 
 gcc tcp_serve_toupper.c -Wall -Wextra -o2 -o tcp_server
 
+If you want cryptographically secured communication:
+
