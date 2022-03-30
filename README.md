@@ -12,7 +12,8 @@ sent to the client in capital letters (with toupper())
 and sent back to the client.
 The client displays the received data on the screen.
 
-No socket multiplexing, it is possible to operate only one  
+No dynamic memory allocation, no socket multiplexing,
+it is possible to operate only one  
 duplex communication without creating other new connections.
 
 If you want cryptographically secured communication:
