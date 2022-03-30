@@ -140,7 +140,7 @@ int main(int argc, char *argv[]) {
         bytes_sent = send(client_socket, (char *)input_data, strlen((char *)input_data), 0);
 
         /* The checking send of the data */ 
-        if (bytes_sent < 0) 
+        if (bytes_sent <= 0) 
         {
             printf("\nConnection closed by server :(\n");
             break;
@@ -154,7 +154,7 @@ int main(int argc, char *argv[]) {
         bytes_received = recv(client_socket, (char *)input_data, DATA_SIZE, 0);
 
         /* The checking receive of the data */ 
-        if (bytes_received < 0) 
+        if (bytes_received <= 0) 
         {
             printf("\nConnection closed by server :(\n");
             break;
