@@ -15,13 +15,15 @@ The client displays the received data on the screen.
 No socket multiplexing, it is possible to operate only one  
 duplex communication without creating other new connections.
 
+If you want cryptographically secured communication:
+https://github.com/jv813yh/simple_example_tcp_salt_channel
+
 # Windows 
-with .bat files
+with .bat files or command line
 
 # Linux:
 gcc tcp_client.c -Wall -Wextra -o2 -o tcp_client
 
 gcc tcp_serve_toupper.c -Wall -Wextra -o2 -o tcp_server
 
-If you want cryptographically secured communication:
 
