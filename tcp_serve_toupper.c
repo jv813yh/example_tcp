@@ -15,8 +15,8 @@
  *                                                                 * 
  * Compileable on Windows with WinLibs standalone build of GCC     * 
  * and MinGW-w64                                                   * 
- *
- * Compileable on Linux with ....                                         *
+ *                                                                 * 
+ * Compileable on Linux with GCC                                   *
  *                                                                 * 
  * Author-Jozef Vendel  Creation date- 20.12.2021                  * 
  * =============================================================== *
@@ -158,7 +158,7 @@ int main(int argc, char *argv[]) {
         bytes_received = recv(socket_client, (char *)read, DATA_SIZE, 0);
 
         /* The checking receive of the data */ 
-        if (bytes_received < 0) 
+        if (bytes_received <= 0) 
         {
             printf("\nConnection closed by client :(\n");
 
@@ -177,7 +177,7 @@ int main(int argc, char *argv[]) {
         bytes_sent = send(socket_client, (char *)read, bytes_received, 0);
 
         /* The checking send of the data */ 
-        if (bytes_sent < 0) 
+        if (bytes_sent <= 0) 
         {   
             printf("\nConnection closed by client :(\n");
 
