@@ -33,6 +33,7 @@ Server poskytuje sluzbu, ktora prevadza male pismena v texte
 odosielaneho klientom na velke pismena a odosiela naspt klientovi.
 Klient prijate data vypisuje na obrazovku.
 
+Ziadne dynamicke pridelovanie pamate.
 Ziadne multiplexovanie socketov, je mozne obsluhovat iba jednu
 obojsmernu komunikaciu bez vytvarania dalsich novych spojeni.
 
