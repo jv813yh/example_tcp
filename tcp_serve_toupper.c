@@ -28,6 +28,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 /* Macros for networking work Windows / Linux */
 #include "win_linux_sockets.h"
