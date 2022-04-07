@@ -40,8 +40,7 @@
 
 /* Auxiliary static fields of size ...*/
 #define AUXILIARY_FIELD_SIZE    100
-/* The port number on which the server is loading */
-#define PORT_NUMBER                    "8080"
+#define PORT                    "8080"
 
 /*======= Global function implementation ===========*/
 
@@ -55,13 +54,8 @@
  */
 SOCKET create_socket_and_listen(const char *port);
 
-int main(int argc, char *argv[]) {
+int main(void) {
 
-    /* Checking the correct program parameters */
-    if (argc < 3) {
-        fprintf(stderr, "usage: tcp_server ip_host port\n");
-        return 1;
-    }
 /* ======= Bacis information about program ========== */
     printf("\n*******************************************************************\n");
     printf("* tcp_serve_toupper:                                              *\n" 
@@ -109,7 +103,7 @@ int main(int argc, char *argv[]) {
      * for a connection from the client   
      *
      */
-    socket_listen = create_socket_and_listen(argv[1], argv[2]);
+    socket_listen = create_socket_and_listen(PORT);
 
     printf("Waiting for connections with client...\n");
 
@@ -215,15 +209,15 @@ int main(int argc, char *argv[]) {
  * a connection from the client.
  * Function parameters are arguments from the command line.
  *
- * @par ip_server: ip adrress server 
  * @par port: number of port
  *
  * return server socket and expects a connection from the client.
  * return wrong report in case failure
  */
 
-SOCKET create_socket_and_listen(const char *port);
+SOCKET create_socket_and_listen(const char *port) 
 {
+
     printf("\nConfiguring local address...\n");
 
     /* 
