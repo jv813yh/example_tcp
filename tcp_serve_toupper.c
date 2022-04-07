@@ -40,6 +40,8 @@
 
 /* Auxiliary static fields of size ...*/
 #define AUXILIARY_FIELD_SIZE    100
+
+/* The port number on which the server is loading */
 #define PORT                    "8080"
 
 /*======= Global function implementation ===========*/
