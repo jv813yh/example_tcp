@@ -24,10 +24,11 @@ Druhy a treti .bat subor zavola .exe subory servera a klienta.
 
 Zlozka example_tcp obsahuje jednoduchy priklad servera a klienta
 ,ktory spolu kominukuju pomocou komunikacneho kanala TCP.
-Server pracuje v Loopbacku na porte 8080 (hodnoty sa mozu menit,
-su dane z prikazoveho riadku pri volani oboch zdrojovych kodov).
+Server pracuje na porte 8080 podla makra PORT.
 Klient, ktory pozna IP adresu
-servera a cislo portu na ktorom pocuva server, sa pripoji na server
+servera a cislo portu na ktorom pocuva server, sa pripoji na server.
+Klient zadava IP adresu a cislo portu z prikazoveho riadku pri
+volani aplikacie.
 Klient odosiela data zadane z prikazoveho riadku.
 Server poskytuje sluzbu, ktora prevadza male pismena v texte 
 odosielaneho klientom na velke pismena a odosiela naspt klientovi.
