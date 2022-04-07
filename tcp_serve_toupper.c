@@ -40,6 +40,8 @@
 
 /* Auxiliary static fields of size ...*/
 #define AUXILIARY_FIELD_SIZE    100
+/* The port number on which the server is loading */
+#define PORT_NUMBER                    "8080"
 
 /*======= Global function implementation ===========*/
 
@@ -51,7 +53,7 @@
  *
  * Function parameters are arguments from the command line.
  */
-SOCKET create_socket_and_listen(const char* host, const char *port);
+SOCKET create_socket_and_listen(const char *port);
 
 int main(int argc, char *argv[]) {
 
@@ -220,7 +222,7 @@ int main(int argc, char *argv[]) {
  * return wrong report in case failure
  */
 
-SOCKET create_socket_and_listen(const char* host, const char *port) 
+SOCKET create_socket_and_listen(const char *port);
 {
     printf("\nConfiguring local address...\n");
 
@@ -236,7 +238,7 @@ SOCKET create_socket_and_listen(const char* host, const char *port)
     hints.ai_flags = AI_PASSIVE;
 
     struct addrinfo *bind_address;
-    if (getaddrinfo(host, port, &hints, &bind_address))
+    if (getaddrinfo(0, port, &hints, &bind_address))
     {
         fprintf(stderr, "getaddrinfo() failed. (%d)\n", GETSOCKETERRNO());
         return 1;
