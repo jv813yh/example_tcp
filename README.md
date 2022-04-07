@@ -1,7 +1,7 @@
 # simple_example_tcp
 The example_tcp folder contains a simple example of a server and a client
 which They communicate together using the TCP communication channel.
-The server works on port 8080. 
+The server works on port 8080 (macro PORT) . 
 A client that knows the IP address
 server and the port number on which the server is listening will connect to the server.
 The client enters this information when calling the application.
